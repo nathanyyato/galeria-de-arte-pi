@@ -1,0 +1,148 @@
+:root {
+  --color-primary: #3f8afa;
+  --color-secondary: #78e2f9;
+  --color-white: #fff;
+  --color-black: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === HEADER === */
+
+header {
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header h1 {
+  width: 100%;
+  text-align: center;
+  color: var(--color-white);
+  font-family: "Calistoga", sans-serif;
+  font-weight: 400;
+}
+
+
+
+/* === NAVEGAÇÂO === */
+nav {
+  margin: 82px 0;
+}
+
+nav ul {
+  background-color: var(--color-secondary);
+  width: 80%;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+nav ul a {
+  color: var(--color-black);
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  transition: all 0.3s ease;
+}
+
+nav ul a:hover {
+  color: rgb(112, 112, 112);
+}
+
+/* === HOME === */
+main section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#home {
+  display: flex;
+  gap: 30px;
+}
+
+#home .ilustration {
+  width: 485px;
+}
+
+#home img {
+  width: 100%;
+}
+
+#home .text {
+  font-family: "Inter", sans-serif;
+}
+
+#home p {
+  margin-bottom: 32px;
+}
+
+/* === QUEM SOMOS === */
+#about {
+  margin-top: 82px;
+  font-family: "Inter", sans-serif;
+}
+
+#about > h1 {
+  margin-bottom: 21px;
+}
+
+.cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.card {
+  border: 3px solid var(--color-primary);
+  border-radius: 16px;
+  padding: 10px 20px;
+  max-width: 80%;
+}
+
+.card .cardTitle {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: var(--color-primary);
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+footer p {
+  color: var(--color-white);
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+.paragrafo {
+  font-family: "Inter", sans-serif; 
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+
+}
+.btnsubmit{
+  height: 100px;
+  width :100px;
+  background-color: var(--color-primary);
+}
+
