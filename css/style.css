@@ -1,62 +1,4 @@
-:root {
-  --color-primary: #3f8afa;
-  --color-secondary: #78e2f9;
-  --color-white: #fff;
-  --color-black: #000;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* === HEADER === */
-
-header {
-  background-color: var(--color-primary);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-header h1 {
-  width: 100%;
-  text-align: center;
-  color: var(--color-white);
-  font-family: "Calistoga", sans-serif;
-  font-weight: 400;
-}
-
-
-
-/* === NAVEGAÇÂO === */
-nav {
-  margin: 82px 0;
-}
-
-nav ul {
-  background-color: var(--color-secondary);
-  width: 80%;
-  margin: 0 auto;
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px;
-}
-
-nav ul a {
-  color: var(--color-black);
-  text-decoration: none;
-  font-family: "Inter", sans-serif;
-  transition: all 0.3s ease;
-}
-
-nav ul a:hover {
-  color: rgb(112, 112, 112);
-}
 
 /* === HOME === */
 main section {
@@ -132,17 +74,15 @@ footer p {
 }
 
 .paragrafo {
-  font-family: "Inter", sans-serif; 
+  font-family: "Inter", sans-serif;
 }
 
-.center{
+.center {
   display: flex;
   justify-content: center;
-
 }
-.btnsubmit{
+.btnsubmit {
   height: 100px;
-  width :100px;
+  width: 100px;
   background-color: var(--color-primary);
 }
-

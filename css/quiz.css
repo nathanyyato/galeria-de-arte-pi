@@ -1,0 +1,47 @@
+:root {
+  --color-primary: #3f8afa;
+  --color-secondary: #78e2f9;
+  --color-white: #fff;
+  --color-black: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Popins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.card {
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-secondary);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: var(--color-black);
+  text-align: center;
+}
+
+.card:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
