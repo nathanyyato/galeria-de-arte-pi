@@ -4,6 +4,20 @@ create database if not exists `artplace`;
 
 use `artplace`;
 
+drop table if exists `usuarios`;
+
+drop table if exists `post`;
+
+drop table if exists `quiz`;
+
+drop table if exists `questoes4respostas`;
+
+drop table if exists `trueOrFalse`;
+
+drop table if exists `usuarioRespondeQuiz`;
+
+drop table if exists `mensagens`;
+
 CREATE TABLE `usuarios` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
   `name` varchar(255),
