@@ -4,6 +4,7 @@ body {
   align-items: center;
   height: 100vh;
   font-family: "Inter", sans-serif;
+  flex-direction: column;
 }
 
 .card {

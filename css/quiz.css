@@ -45,3 +45,74 @@
   background-color: var(--color-primary);
   color: var(--color-white);
 }
+
+.quiz__body {
+  border: 2px solid var(--color-primary);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.quiz__question {
+  margin: 1rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.quiz__question-text {
+  margin: 1rem 0;
+}
+.quiz__question-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.quiz__question-option--correct {
+  background-color: #a5f3a5;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.quiz__question-option--incorrect {
+  background-color: #f3a5a5;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.buttons .btn {
+  padding: 10px;
+  font-family: "inter", sans-serif;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  min-width: 150px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+}
+
+.buttons .outline {
+  background-color: transparent;
+  color: var(--color-black);
+  border: 2px solid var(--color-primary);
+}
+
+.buttons .outline:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.buttons .btn:hover {
+  filter: brightness(0.8);
+}

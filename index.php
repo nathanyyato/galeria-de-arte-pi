@@ -14,7 +14,7 @@
 </head>
 
 <body>
-	<?php include(__DIR__ . "/components/header.php"); ?>
+	<?php include("header.php"); ?>
 	<main>
 		<section id="home">
 			<div class="ilustration">

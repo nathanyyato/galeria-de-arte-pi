@@ -68,28 +68,31 @@
 	</div>
 	<nav>
 		<ul>
-			<?php
-			if (isset($_SESSION['user'])) :
-			?>
-				<li><a href='./pages/logout.php'>Logout</a></li>
 
 			<?php
-			endif;
+
+
+			session_start();
 			$links = [
-				["Home", ""],
+				["Home", "./index.php"],
 				["Artes", "pages/artes.php"],
-				["Design Gráfico", "pages/Design Gráfico.html"],
-				["Quiz", "quiz.php"],
-				["Mensagem", "pages/messagens.html"],
-				["Login", "pages/login.html"],
+				["Design Gráfico", "pages/Design_grafico.php"],
 			];
+			if (isset($_SESSION['user'])) {
+				$links[] = ["Mensagem", "pages/messagens.php"];
+				$links[] = ["Quiz", "quiz.php"];
+				$links[] = ["Logout", "./pages/logout.php"];
+			} else {
+				$links[] = ["Login", "pages/login.php"];
+				$links[] = ["Cadastro", "pages/cadastro.php"];
+			}
+
 			foreach ($links as $link) :
 			?>
 				<li><a href='<?= $link[1] ?>'><?= $link[0] ?></a></li>
 			<?php
 			endforeach;
 			?>
-
 		</ul>
 	</nav>
 </header>

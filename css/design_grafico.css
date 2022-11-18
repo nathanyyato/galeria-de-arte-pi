@@ -1,0 +1,33 @@
+.card {
+  max-width: 500px;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.container h1 {
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+}
+
+.card {
+  height: max-content;
+}
+
+.container-conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem;
+  gap: 1rem;
+}

@@ -10,7 +10,7 @@
 </head>
 
 <body>
-	<?php include(__DIR__ . "/components/header.php"); ?>
+	<?php include(__DIR__ . "/header.php"); ?>
 	<?php require(__DIR__ . "/php/getAllQuizes.php"); ?>
 	<main class="container">
 		<h1>Quiz</h1>
