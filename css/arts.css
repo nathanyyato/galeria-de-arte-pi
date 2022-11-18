@@ -1,0 +1,42 @@
+main {
+  width: 90vw;
+}
+
+#images {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#images img {
+  width: 100%;
+  height: 70vh;
+  object-fit: contain;
+}
+
+.controllers {
+  margin-top: 25px;
+}
+
+#fixed {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50% !important;
+  padding: 0% !important;
+  min-width: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#fixed img {
+  width: 70%;
+}
+#contagemDeImagens {
+  text-align: center;
+}

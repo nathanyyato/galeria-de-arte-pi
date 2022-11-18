@@ -1,0 +1,115 @@
+/* <main class="container">
+		<div class="quiz">
+			<div class="quiz__header">
+				<h1 class="quiz__title">Quiz</h1>
+				<p class="quiz__description">Teste seus conhecimentos sobre arte</p>
+			</div>
+			<div class="quiz__body">
+				<div class="quiz__question">
+					<p class="quiz__question-text">
+						Qual o nome do artista que pintou a Mona Lisa?
+					</p>
+					<div class="quiz__question-options">
+						<label class="quiz__question-option">
+							<input type="radio" name="question-1" value="Leonardo da Vinci" />
+							Leonardo da Vinci
+						</label>
+						<label class="quiz__question-option">
+							<input type="radio" name="question-1" value="Vincent van Gogh" />
+							Vincent van Gogh
+						</label>
+						<label class="quiz__question-option">
+							<input type="radio" name="question-1" value="Pablo Picasso" />
+							Pablo Picasso
+						</label>
+						<label class="quiz__question-option">
+							<input type="radio" name="question-1" value="Michelangelo" />
+							Michelangelo
+						</label>
+					</div>
+				</div>
+				<div class="quiz__question">
+					<p class="quiz__question-text">
+						Qual o nome do artista que pintou a Guernica?
+					</p>
+					<div class="quiz__question-options">
+						<label class="quiz__question-option">
+							<input type="radio" name="question-2" value="Leonardo da Vinci" />
+							Leonardo da Vinci
+						</label>
+						<label class="quiz__question-option">
+							<input type="radio" name="question-2" value="Vincent van Gogh" />
+							Vincent van Gogh
+						</label>
+						<label class="quiz__question-option">
+							<input type="radio" name="question-2" value="Pablo Picasso" />
+							Pablo Picasso
+						</label>
+						<label class="quiz__question-option">
+							<input type="radio" name="question-2" value="Michelangelo" />
+							Michelangelo
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main> */
+
+:root {
+  --color-primary: #3f8afa;
+  --color-secondary: #78e2f9;
+  --color-white: #fff;
+  --color-black: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz {
+  border: 2px solid var(--color-primary);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 500px;
+  font-family: "Poppins", sans-serif;
+}
+
+.quiz__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.quiz__description {
+  text-align: justify;
+}
+
+.quiz__body {
+  margin-top: 2rem;
+}
+
+.quiz__question-text {
+  margin-bottom: 1rem;
+}
+
+.quiz__question-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.quiz__question {
+  margin-bottom: 1rem;
+}
