@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/design_grafico.css">
-	<title>Design Gráfico</title>
+	<title>Conteúdo</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
 	}
 	?>
 	<main class="container">
-		<h1>Design gráfico</h1>
+		<h1>Conteúdo</h1>
 		<div class="cardContainer">
 			<?php foreach ($posts as $post) : ?>
 				<a href="./design.php?id=<?= $post['id'] ?>
