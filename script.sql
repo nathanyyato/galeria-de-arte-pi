@@ -24,7 +24,7 @@ CREATE TABLE `usuarios` (
   `email` varchar(255),
   `senha` varchar(255),
   `create_at` varchar(255)
-);
+) ENGINE = InnoDB DEFAULT CHARSET = utf8;
 
 CREATE TABLE `post` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
@@ -33,7 +33,7 @@ CREATE TABLE `post` (
   `resumo` varchar(100),
   `create_at` varchar(255),
   `update_at` varchar(255)
-);
+) ENGINE = InnoDB DEFAULT CHARSET = utf8;
 
 CREATE TABLE `quiz` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
@@ -42,7 +42,7 @@ CREATE TABLE `quiz` (
   `fonte` text,
   `questao` int,
   `comentario` text
-);
+) ENGINE = InnoDB DEFAULT CHARSET = utf8;
 
 CREATE TABLE `questoes4respostas` (
   `id` int,
@@ -50,27 +50,27 @@ CREATE TABLE `questoes4respostas` (
   `pergunta2` varchar(255),
   `pergunta3` varchar(255),
   `pergunta4` varchar(255)
-);
+) ENGINE = InnoDB DEFAULT CHARSET = utf8;
 
 CREATE TABLE `trueOrFalse` (
   `id` int,
   `pergunta1` varchar(255),
   `pergunta2` varchar(255)
-);
+) ENGINE = InnoDB DEFAULT CHARSET = utf8;
 
 CREATE TABLE `usuarioRespondeQuiz` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
   `id_quiz` int,
   `id_usuario` int,
   `resposta_usuario` text
-);
+) ENGINE = InnoDB DEFAULT CHARSET = utf8;
 
 create table `mensagens` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
   `id_usuario` int,
   `mensagem` text,
   `create_at` date default current_timestamp
-);
+) ENGINE = InnoDB DEFAULT CHARSET = utf8;
 
 insert into
   quiz (
@@ -314,7 +314,20 @@ values
       definição de arte. Interpelam criticamente também o mercado e o sistema de
       validação da arte. As características da arte contemporânea Alguns das
       principais características da arte contemporânea são:
-    </p>'
+    </p>
+    <ul>
+      <li>abandono dos suportes tradicionais;</li>
+      <li>liberdade e subjetividade na produção artística;</li>
+      <li>influência de uma sociedade permeada pela troca de informações, pelo uso da tecnologia e pelas novas mídias;</li>
+      <li>efemeridade das obras;</li>
+      <li>mescla de diferentes estilos artísticos e criação de conceitos;</li>
+      <li>utilização de materiais diversos na mesma obra;</li>
+      <li>fusão entre as obras de arte e a vida cotidiana;</li>
+      <li>forte aproximação com a cultura pop;</li>
+      <li>questionamentos sobre os conceitos da própria arte;</li>
+      <li>criação de obras interativas, nas quais o espectador participa ativamente.</li>
+    </ul>
+    '
   ),
   (
     'Arte Conceitual',
