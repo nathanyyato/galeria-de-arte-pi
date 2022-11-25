@@ -78,7 +78,7 @@
 			$links = [
 				["Home", "../index.php"],
 				["Artes", "./artes.php"],
-				["Conteúdo", "./Design_grafico.php"],
+				["Design Gráfico", "./Design_grafico.php"],
 			];
 			if (isset($_SESSION['user'])) {
 				$links[] = ["Mensagem", "./messagens.php"];
