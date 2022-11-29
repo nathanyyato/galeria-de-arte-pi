@@ -13,14 +13,3 @@ if ($server_url !== 'localhost') {
 }
 
 $conn = mysqli_connect($server, $user, $pass, $db);
-
-function convert_array_to_utf8($array)
-{
-	array_walk_recursive($array, function (&$item, $key) {
-		if (!mb_detect_encoding($item, 'utf-8', true)) {
-			$item = utf8_encode($item);
-		}
-	});
-
-	return $array;
-}
