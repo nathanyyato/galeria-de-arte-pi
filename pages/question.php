@@ -21,7 +21,6 @@
 	$sql = "SELECT * FROM quiz WHERE quiz.id = $idQuiz";
 	$result = mysqli_query($conn, $sql);
 	$row_quiz = mysqli_fetch_assoc($result);
-	$row_quiz = convert_array_to_utf8($row_quiz);
 
 	$questoes4respostas = "SELECT * FROM questoes4respostas WHERE id = $idQuiz";
 	$trueOrFalse = "SELECT * FROM trueOrFalse WHERE id = $idQuiz";
@@ -38,7 +37,7 @@
 	} else {
 		$perguntaArr = $trueOrFalse_row;
 	}
-	$perguntaArr = convert_array_to_utf8($perguntaArr);
+
 	$enunciado = $row_quiz['enunciado'];
 
 	?>

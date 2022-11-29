@@ -18,7 +18,6 @@
 	$sql = "SELECT * FROM post WHERE id = $idDesign";
 	$resultado = mysqli_query($conn, $sql);
 	$design = mysqli_fetch_assoc($resultado);
-	$design = convert_array_to_utf8($design);
 	// echo $design['conteudo'];
 
 	?>
